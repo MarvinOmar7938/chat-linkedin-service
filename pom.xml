@@ -7,6 +7,14 @@
     <groupId>com.dh.chat.linkedin.service</groupId>
     <artifactId>chat-linkedin</artifactId>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>linkedin-api</module>
+        <module>linkedin-bom</module>
+        <module>linkedin-service</module>
+        <module>linkedin-service-standalone</module>
+    </modules>
 
 
 </project>
