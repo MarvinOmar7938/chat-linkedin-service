@@ -1,0 +1,21 @@
+@startuml
+set namespaceSeparator none
+hide method
+namespace linkedin.service.model.domain {
+ class User {
+ - id: Long
+ - name:String
+ - age:Long
+ - email:String
+ - gender:TypeGender
+ - numberphone:Long
+ - account:Account
+ }
+ class Account {
+ - id:Long
+ - username:String
+ - password:String
+ }
+ User "1..*" *-right-> "1" Account : account
+}
+@enduml
