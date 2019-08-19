@@ -42,10 +42,6 @@ public class UserCreateService {
     }
 
     private Account composeAccountInstance() {
-//        Account instance =new Account();
-//        instance.setUsername(inputaccount.getUsername());
-//        instance.setPassword(inputaccount.getPassword());
-//        return instance;
         return accountRepository.findById(input.getAccountid()).get();
     }
     private User composeUserInstance(Account account) {
