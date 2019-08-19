@@ -12,6 +12,5 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableFeignClients
 @ComponentScan("com.dh.chat.linkedin.service")
-@EnableAutoConfiguration
 public class Config {
 }
